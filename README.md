@@ -27,3 +27,16 @@
 }
 ```
 <br>
+
+Github OAuth Firebase Redirect URI
+ 
+```
+https://<your_firebase_project>.firebaseapp.com/__/auth/handler
+
+```
+
+
+
+
+
+
