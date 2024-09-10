@@ -1,0 +1,239 @@
+/* Tailwindcss ^ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Google fonts api ^ */
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root.light {
+  color-scheme: light;
+}
+
+:root.dark {
+  color-scheme: dark;
+}
+
+* {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-wrap: break-word;
+}
+
+*:focus-visible {
+  outline: solid 3px #c891ff;
+  /* border: #ce9dff 3px solid; */
+  border-radius: 5px;
+  /* padding: 1px; */
+}
+
+*::selection {
+  background-color: #ddbbff;
+  color: #000;
+  /* color: #fff; */
+}
+
+span::selection {
+  background-color: rgba(139, 255, 160, 0.853) !important;
+}
+
+code::selection {
+  background-color: rgba(139, 255, 160, 0.853) !important;
+}
+
+a::selection {
+  background-color: rgba(139, 255, 160, 0.853) !important;
+}
+
+img::selection {
+  background-color: #c6c6c642;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 7px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #444444;
+  border-radius: 0px;
+  border: none;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #555555;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #666666;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.musicalbumimg {
+  object-fit: cover;
+
+}
+
+.dragnone {
+  -webkit-user-drag: none;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-spinner {
+  border: 3px solid;
+  border-top: 3px solid transparent;
+  border-left: 3px solid transparent;
+
+  border-radius: 50%;
+  animation: spinner 0.5s linear infinite;
+}
+
+.now.playing .bar {
+  display: inline-block;
+  position: relative;
+  margin-right: 3px;
+  width: 5px;
+  height: 1px;
+  overflow: hidden;
+  color: transparent;
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.paused.playing .bar {
+  animation-iteration-count: 1;
+}
+
+.n1 {
+  animation-delay: 0.5s;
+}
+
+.n2 {
+  animation-delay: 0.3s;
+}
+
+.n3 {
+  animation-delay: 0.7s;
+}
+
+@keyframes pulse {
+  0% {
+    height: 1px;
+    margin-top: 0;
+  }
+
+  10% {
+    height: 30px;
+    margin-top: -30px;
+  }
+
+  50% {
+    height: 20px;
+    margin-top: -20px;
+  }
+
+  60% {
+    height: 25px;
+    margin-top: -25px;
+  }
+
+  80% {
+    height: 20px;
+    margin-top: -20px;
+  }
+
+  100% {
+    height: 1px;
+    margin-top: 0;
+  }
+}
+
+input[type="range"] {
+  appearance: none;
+  position: relative;
+  height: 7px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+::-webkit-slider-runnable-track {
+  background: rgb(214, 214, 214);
+}
+
+::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 0px;
+  width: 0px;
+  z-index: 10;
+  position: relative;
+  border-radius: 10px;
+  background: #ae5dff;
+  box-shadow: -500px 0 0 500px #ae5dff;
+}
+
+/* moz */
+::-moz-range-track {
+  height: 40px;
+  background: #ddd;
+}
+
+::-moz-range-thumb {
+  background: #ae5dff;
+  height: 0px;
+  width: 0px;
+  border-radius: 10px !important;
+  box-shadow: -500px 0 0 500px #ae5dff;
+  box-sizing: border-box;
+  border: none;
+}
+
+::-ms-fill-lower {
+  background: #ae5dff;
+}
+
+::-ms-thumb {
+  background: #ae5dff;
+  height: 40px;
+  width: 20px;
+  box-sizing: border-box;
+}
+
+::-ms-ticks-after {
+  display: none;
+}
+
+::-ms-ticks-before {
+  display: none;
+}
+
+::-ms-track {
+  background: #ae5dff;
+  color: transparent;
+  height: 40px;
+  border: none;
+}
+
+::-ms-tooltip {
+  display: none;
+}
+
