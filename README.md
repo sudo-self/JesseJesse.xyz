@@ -4,13 +4,13 @@
 
 ## install
 
-run `git clone https://github.com/sudo-self/JesseJesse.xyz.git`<br>
+`git clone https://github.com/sudo-self/JesseJesse.xyz.git`<br>
 
-cd `JesseJesse.xyz`<br>
+`cd JesseJesse.xyz`<br>
 
-run `pmpm i`<br>
+`pmpm i`<br>
 
-then `pnpm run dev`<br>
+`pnpm run dev`<br>
 
 <a href="http://localhost:3000">localhost:3000</a><br>
 
