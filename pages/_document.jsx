@@ -3,7 +3,7 @@ import Script from "next/script";
 
 export default function Document() {
   const headdata = {
-    image: "https://bucket.jessejesse.xyz/jessejesse.xyz.png",
+    image: "https://pub-62f7f17b63fe4f5cbbf739cf66c0c5ee.r2.dev/jessejesse.xyz.png",
     url: "https://jessejesse.xyz",
     description: "Creating something useful for the world one line of code at a time",
     title: "Jesse Roper - Developer",
