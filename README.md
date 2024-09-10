@@ -60,6 +60,20 @@ Display Current Time JSX
   const [currentTime, setCurrentTime] = useState(getCurrentTime());
 ```
 
+incriment page view count +1<br>
+
+```
+  const incrementViewCount = async () => {
+    try {
+      const countRef = firebase.database().ref("viewCount");
+      await countRef.transaction((currentCount) => {
+        return (currentCount || 0) + 1;
+      });
+    } catch (error) {
+      console.error("Error incrementing view count:", error);
+    }
+  };
+  ```
 
 
 
