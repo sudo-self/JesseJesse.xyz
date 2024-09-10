@@ -9,12 +9,13 @@ import YouTube from "react-youtube";
 import { CgClose } from "react-icons/cg";
 import { MdPlaylistPlay } from "react-icons/md";
 
-const tokenkey = "AIzaSyCaRXoR-xQJsTV8-xQAeMPh97FJ74Gpssg";
+const tokenkey = process.env.NEXT_PUBLIC_YOUTUBE_API_KEY;
+
 
 const Music = () => {
   const [loading, setLoading] = useState(true);
   const [playList, setPlaylist] = useState([]);
-  const [playListo, setPlaylisto] = useState(0); // Initialize with 0
+  const [playListo, setPlaylisto] = useState(0); 
   const [playerload, setPlayerLoad] = useState(true);
   const [playeritems, setPlayerItems] = useState(null);
   const [isPaused, setIsPaused] = useState(false);
