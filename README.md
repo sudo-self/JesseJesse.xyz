@@ -28,15 +28,22 @@
 ```
 <br>
 
-Github OAuth Firebase Redirect URI
+Github OAuth Firebase Redirect URI<br>
  
 ```
 https://<your_firebase_project>.firebaseapp.com/__/auth/handler
 
 ```
+pnpm i react-dom-confetti
 
+```
+const triggerConfetti = () => {
+    setConfettiActive(true);
+    setTimeout(() => {
+      setConfettiActive(false);
+    }, 4000);
+  }
 
-
-
-
+```
+<br>
 
