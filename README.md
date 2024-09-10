@@ -15,3 +15,15 @@
 <a href="http://localhost:3000">localhost:3000</a><br>
 
  see `env.example`<br>
+
+ Firebase Guestbook Rules Example<br>
+ 
+```
+{
+  "rules": {
+    ".read": true,  
+    ".write": "auth != null"  
+  }
+}
+```
+<br>
