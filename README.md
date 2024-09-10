@@ -74,6 +74,6 @@ incriment page view count +1<br>
     }
   };
   ```
-
+Firebase console --> Auth --> Settings --> Authorized domains --> (yourdomain.xyz)<br>
 
 
