@@ -106,13 +106,13 @@ export default function HomePage() {
   <meta property="og:url" content="https://JesseJesse.xyz" />
   <meta property="og:title" content="XYZ" />
   <meta property="og:description" content="Explore Jesse Roper's personal site featuring blogs, projects, and creative works powered by Next.js." />
-  <meta property="og:image" content="https://jessejesse.xyz/ogimage.png" />
+  <meta property="og:image" content="https://pub-62f7f17b63fe4f5cbbf739cf66c0c5ee.r2.dev/jessejesse.xyz.png" />
 
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content="https://JesseJesse.xyz" />
   <meta property="twitter:title" content="XYZ" />
   <meta property="twitter:description" content="Explore Jesse Roper's personal site featuring blogs, projects, and creative works powered by Next.js." />
-  <meta property="twitter:image" content="https://jessejesse.xyz/ogimage.png" />
+  <meta property="twitter:image" content="https://pub-62f7f17b63fe4f5cbbf739cf66c0c5ee.r2.dev/jessejesse.xyz.png" />
   
   <meta name="author" content="Jesse Roper" />
   
