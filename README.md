@@ -1,8 +1,8 @@
-# [JesseJesse.xyz](https://JesseJesse.com)
+## [JesseJesse.xyz](https://JesseJesse.com)
 
 <img width="1440" alt="Screenshot 2024-09-10 at 2 09 16 PM" src="https://github.com/user-attachments/assets/5177de6d-321f-4b8b-8b64-ac6580380e7f">
 
-## install
+### install
 
 `git clone https://github.com/sudo-self/JesseJesse.xyz.git`<br>
 
@@ -75,5 +75,3 @@ incriment page view count +1<br>
   };
   ```
 Firebase console --> Auth --> Settings --> Authorized domains --> (yourdomain.xyz)<br>
-
-
