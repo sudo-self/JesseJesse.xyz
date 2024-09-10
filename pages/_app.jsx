@@ -41,7 +41,7 @@ function MyApp({ Component, pageProps, session }) {
           <main className="pt-20 px-[15px] xs:px-[25px] mx-auto max-w-4xl">
             <SessionProvider session={session}>
               <Script
-                src="https://localhost:3001/theme.js"
+                src="https://jessejesse.xyz/theme.js"
                 strategy="beforeInteractive"
               />
               <Component {...pageProps} />
