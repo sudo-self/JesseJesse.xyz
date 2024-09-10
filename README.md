@@ -3,8 +3,10 @@
 
 ## install local
 
-run `pmpm i`
+run `pmpm i`<br>
 
-then `pnpm run dev`
+then `pnpm run dev`<br>
 
-### MIT License
+<a href="http://localhost:3000">localhost:300</a><br>
+
+ see `env.example`<br>
