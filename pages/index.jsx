@@ -98,7 +98,7 @@ export default function HomePage() {
   
 
 return (
-    <main>
+   <main>
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -121,7 +121,7 @@ return (
       </Head>
       <Confetti active={confettiActive} config={confettiConfig} />
       <div className="xs:ml-0 ml-2">
-        <div className="flex flex-col-reverse sm:flex-row items-start my-5 ">
+        <div className="flex flex-col-reverse sm:flex-row items-start my-5">
           <div className="flex flex-col pr-8">
             <div className="flex items-center">
               <h1 className="font-extrabold mt-6 text-3xl md:text-4xl tracking-tight notranslate">
@@ -147,30 +147,40 @@ return (
               </button>  
             </div>
             <p className="text-blue-600 dark:text-blue-400 mb-3 ml-6 flex items-center">
-              {currentTime}{" "}
+              {currentTime}
               <img
                 src="https://api.iconify.design/typcn:watch.svg?color=%23ffffff"
                 alt="Icon"
                 style={{ marginLeft: '5px' }}
               />
             </p>
-             <a href="https://github.com/sudo-self/floater-buttons/actions/workflows/npm-publish.yml" target="_blank" rel="noopener noreferrer">
-        <img
-          src="https://github.com/sudo-self/floater-buttons/actions/workflows/npm-publish.yml/badge.svg"
-          alt="Node.js Package"
-        />
-      </a>     
-      <a
-          href="https://github.com/sudo-self/floater-xyz/actions/workflows/nextjs.yml"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="https://github.com/sudo-self/floater-xyz/actions/workflows/nextjs.yml/badge.svg"
-            alt="Deploy Next.js site to Pages"
-          />
-        </a>
-          </div>
+            <div style={{ textAlign: 'center' }}>
+              <a
+                href="https://github.com/sudo-self/floater-buttons/actions/workflows/npm-publish.yml"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ marginRight: '20px' }}
+              >
+                <img
+                  src="https://github.com/sudo-self/floater-buttons/actions/workflows/npm-publish.yml/badge.svg"
+                  alt="Node.js Package"
+                  style={{ width: '120px', height: 'auto' }}
+                />
+              </a>
+              <a
+                href="https://github.com/sudo-self/floater-xyz/actions/workflows/nextjs.yml"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://github.com/sudo-self/floater-xyz/actions/workflows/nextjs.yml/badge.svg"
+                  alt="Deploy Next.js site to Pages"
+                  style={{ width: '120px', height: 'auto' }}
+                />
+              </a>
+            </div>
+
+     
           <div className="flex-1"></div>
           <div className="w-[130px] sm:w-[140px] relative sm:my-[25px] my-[-15px] sm:mx-0 mx-[-10px] ">
             <Image
