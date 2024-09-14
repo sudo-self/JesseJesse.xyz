@@ -117,7 +117,7 @@ return (
         <meta property="twitter:image" content="https://pub-62f7f17b63fe4f5cbbf739cf66c0c5ee.r2.dev/jessejesse.xyz.png" />
         <meta name="author" content="Jesse Roper" />
         <title>JesseJesse.xyz</title>
-        <script src="https://firebasestorage.googleapis.com/v0/b/jessejessexyz.appspot.com/o/corner-button-1726296101906.js?alt=media&token=7b7b3257-6a2f-4dfa-83dd-9e3c42382755"></script>
+      <script src="https://firebasestorage.googleapis.com/v0/b/jessejessexyz.appspot.com/o/corner-button-1726317289352.js?alt=media&token=e33f5d67-3a39-4a00-9fa4-b8441e131bd4"></script>
       </Head>
       <Confetti active={confettiActive} config={confettiConfig} />
       <div className="xs:ml-0 ml-2">
