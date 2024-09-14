@@ -10,7 +10,6 @@ import RecentlyBlog from "./RecentlyBlog";
 import Head from "next/head";
 import Confetti from "react-dom-confetti";
 
-
 const firebaseConfig = {
   apiKey: "AIzaSyAFRwmutdSXr2XlY_VROUkN0QRna8kbDvc",
   authDomain: "fresh-squeezed-lemons.firebaseapp.com",
@@ -60,10 +59,8 @@ export default function HomePage() {
         const count = snapshot.val();
         setViewCount(count);
 
-      
         await incrementViewCount();
 
-    
         const intervalId = setInterval(() => {
           setCurrentTime(getCurrentTime());
         }, 1000);
@@ -95,38 +92,20 @@ export default function HomePage() {
       setConfettiActive(false);
     }, 4000);
   };
-  
 
-return (
+  return (
     <main>
       <Head>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="title" content="XYZ" />
-        <meta name="description" content="Explore Jesse Roper's personal site featuring blogs, projects, and creative works powered by Next.js." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://JesseJesse.xyz" />
-        <meta property="og:title" content="XYZ" />
-        <meta property="og:description" content="Explore Jesse Roper's personal site featuring blogs, projects, and creative works powered by Next.js." />
-        <meta property="og:image" content="https://pub-62f7f17b63fe4f5cbbf739cf66c0c5ee.r2.dev/jessejesse.xyz.png" />
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://JesseJesse.xyz" />
-        <meta property="twitter:title" content="XYZ" />
-        <meta property="twitter:description" content="Explore Jesse Roper's personal site featuring blogs, projects, and creative works powered by Next.js." />
-        <meta property="twitter:image" content="https://pub-62f7f17b63fe4f5cbbf739cf66c0c5ee.r2.dev/jessejesse.xyz.png" />
-        <meta name="author" content="Jesse Roper" />
-        <title>JesseJesse.xyz</title>  
-       </Head>
+        {/* Head content */}
+      </Head>
       <Confetti active={confettiActive} config={confettiConfig} />
-       <script src="https://firebasestorage.googleapis.com/v0/b/jessejessexyz.appspot.com/o/floater.js?alt=media&token=d1c8e531-d555-4e4c-8c83-07a10bcb2222"></script>
+      <script src="https://firebasestorage.googleapis.com/v0/b/jessejessexyz.appspot.com/o/floater.js?alt=media&token=d1c8e531-d555-4e4c-8c83-07a10bcb2222"></script>
+
       <div className="xs:ml-0 ml-2">
-        <div className="flex flex-col-reverse sm:flex-row items-start my-5 ">
+        <div className="flex flex-col-reverse sm:flex-row items-start my-5">
           <div className="flex flex-col pr-8">
             <div className="flex items-center">
-              <h1 className="font-extrabold mt-6 text-3xl md:text-4xl tracking-tight notranslate">
-                Jesse Roper&nbsp;
-              </h1>
+              <h1 className="font-extrabold mt-6 text-3xl md:text-4xl tracking-tight notranslate">Jesse Roper&nbsp;</h1>
             </div>
             <div className="flex items-center ml-6">
               <button onClick={triggerConfetti} className="hover:text-green-500 flex items-center">
@@ -136,7 +115,7 @@ return (
                   alt="Icon"
                   style={{ marginLeft: '5px' }}
                 />
-              </button>  
+              </button>
             </div>
             <p className="text-blue-600 dark:text-blue-400 mb-3 ml-6 flex items-center">
               {currentTime}{" "}
@@ -146,88 +125,63 @@ return (
                 style={{ marginLeft: '5px' }}
               />
             </p>
-        <div className="flex">
-  <a
-    href="https://github.com/sudo-self/floater-buttons/actions/workflows/npm-publish.yml"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="mr-4" 
-  >
-    <img
-      src="https://github.com/sudo-self/floater-buttons/actions/workflows/npm-publish.yml/badge.svg"
-      alt="Node.js Package"
-    />
-  </a>
-  <a
-    href="https://github.com/sudo-self/floater-xyz/actions/workflows/nextjs.yml"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <img
-      src="https://github.com/sudo-self/floater-xyz/actions/workflows/nextjs.yml/badge.svg"
-      alt="Deploy Next.js site to Pages"
-    />
-  </a>
-</div>
+            <div className="flex">
+              <a
+                href="https://github.com/sudo-self/floater-buttons/actions/workflows/npm-publish.yml"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mr-4"
+              >
+                <img
+                  src="https://github.com/sudo-self/floater-buttons/actions/workflows/npm-publish.yml/badge.svg"
+                  alt="Node.js Package"
+                />
+              </a>
+              <a
+                href="https://github.com/sudo-self/floater-xyz/actions/workflows/nextjs.yml"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://github.com/sudo-self/floater-xyz/actions/workflows/nextjs.yml/badge.svg"
+                  alt="Deploy Next.js site to Pages"
+                />
+              </a>
+            </div>
           </div>
-    <div className="flex">
+          <div className="flex-1"></div>
+          <div className="w-[130px] sm:w-[140px] relative sm:my-[25px] my-[-15px] sm:mx-0 mx-[-10px]">
+            <Image
+              placeholder="blur"
+              src={require("/public/JesseRoper.jpg")}
+              alt="Jesse Roper"
+              className="w-auto rounded-full grayscale"
+            />
+          </div>
+        </div>
 
-  <a
-    href="https://github.com/sudo-self/floater-buttons/actions/workflows/npm-publish.yml"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="mr-4"
-  >
-    <img
-      src="https://github.com/sudo-self/floater-buttons/actions/workflows/npm-publish.yml/badge.svg"
-      alt="Node.js Package"
-    />
-  </a>
+        <div className="mt-[40px] mb-[20px]">
+          <a
+            href="https://floater.jessejesse.xyz"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-blue-500"
+          >
+            <h1 className="tracking-tighter text-4xl mb-6 font-extrabold">(⌐■_■)</h1>
+          </a>
 
+          <RecentlyBlog />
+        </div>
 
-  <a
-    href="https://github.com/sudo-self/floater-xyz/actions/workflows/nextjs.yml"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <img
-      src="https://github.com/sudo-self/floater-xyz/actions/workflows/nextjs.yml/badge.svg"
-      alt="Deploy Next.js site to Pages"
-    />
-  </a>
-</div>
+        <div className="mt-[70px]">
+          <h1 className="tracking-tighter text-4xl mb-6 font-extrabold">Projects</h1>
+          <PinnedRepos />
+        </div>
+      </div>
+    </main>
+  );
+}
 
-
-<div className="flex-1"></div>
-<div className="w-[130px] sm:w-[140px] relative sm:my-[25px] my-[-15px] sm:mx-0 mx-[-10px]">
-  <Image
-    placeholder="blur"
-    src={require("/public/JesseRoper.jpg")}
-    alt="Jesse Roper"
-    className="w-auto rounded-full grayscale"
-  />
-</div>
-
-
-<div className="mt-[40px] mb-[20px]">
-  <a
-    href="https://floater.jessejesse.xyz"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="hover:text-blue-500"
-  >
-    <h1 className="tracking-tighter text-4xl mb-6 font-extrabold">(⌐■_■)</h1>
-  </a>
-
-
-  <RecentlyBlog />
-</div>
-
-
-<div className="mt-[70px]">
-  <h1 className="tracking-tighter text-4xl mb-6 font-extrabold">Projects</h1>
-  <PinnedRepos />
-</div>
 
 
 
