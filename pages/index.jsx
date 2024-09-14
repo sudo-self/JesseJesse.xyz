@@ -170,51 +170,64 @@ return (
   </a>
 </div>
           </div>
-          <div className="flex-1"></div>
-          <div className="w-[130px] sm:w-[140px] relative sm:my-[25px] my-[-15px] sm:mx-0 mx-[-10px] ">
-            <Image
-              placeholder="blur"
-              src={require("/public/JesseRoper.jpg")}
-              alt="Jesse Roper"
-              className="w-auto rounded-full grayscale"
-            />
-          </div>
-        </div>
-      </div>
-      <div className="mt-[40px] mb-[20px]">
-      <a
-  href="https://floater.jessejesse.xyz"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="hover:text-blue-500"
->
-  <h1 className="tracking-tighter text-4xl mb-6 font-extrabold">(⌐■_■)🔘</h1>
-</a>
+    <div className="flex">
 
-        
-        <RecentlyBlog />
-      </div>
-      <div className="mt-[70px]">
-        <h1 className="tracking-tighter  text-4xl mb-6 font-extrabold">Projects</h1>
-        <PinnedRepos /> 
-      </div>
-    </main>
-  );
-}
+  <a
+    href="https://github.com/sudo-self/floater-buttons/actions/workflows/npm-publish.yml"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="mr-4"
+  >
+    <img
+      src="https://github.com/sudo-self/floater-buttons/actions/workflows/npm-publish.yml/badge.svg"
+      alt="Node.js Package"
+    />
+  </a>
 
 
+  <a
+    href="https://github.com/sudo-self/floater-xyz/actions/workflows/nextjs.yml"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img
+      src="https://github.com/sudo-self/floater-xyz/actions/workflows/nextjs.yml/badge.svg"
+      alt="Deploy Next.js site to Pages"
+    />
+  </a>
+</div>
 
 
+<div className="flex-1"></div>
+<div className="w-[130px] sm:w-[140px] relative sm:my-[25px] my-[-15px] sm:mx-0 mx-[-10px]">
+  <Image
+    placeholder="blur"
+    src={require("/public/JesseRoper.jpg")}
+    alt="Jesse Roper"
+    className="w-auto rounded-full grayscale"
+  />
+</div>
 
 
+<div className="mt-[40px] mb-[20px]">
+  <a
+    href="https://floater.jessejesse.xyz"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-blue-500"
+  >
+    <h1 className="tracking-tighter text-4xl mb-6 font-extrabold">(⌐■_■)</h1>
+  </a>
 
 
+  <RecentlyBlog />
+</div>
 
 
-
-
-
-
+<div className="mt-[70px]">
+  <h1 className="tracking-tighter text-4xl mb-6 font-extrabold">Projects</h1>
+  <PinnedRepos />
+</div>
 
 
 
