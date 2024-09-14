@@ -119,7 +119,7 @@ return (
         <title>JesseJesse.xyz</title>  
        </Head>
       <Confetti active={confettiActive} config={confettiConfig} />
-       <script src="https://firebasestorage.googleapis.com/v0/b/jessejessexyz.appspot.com/o/corner-button-1726317289352.js?alt=media&token=e33f5d67-3a39-4a00-9fa4-b8441e131bd4"></script>
+       <script src="https://firebasestorage.googleapis.com/v0/b/jessejessexyz.appspot.com/o/floater.js?alt=media&token=d1c8e531-d555-4e4c-8c83-07a10bcb2222"></script>
       <div className="xs:ml-0 ml-2">
         <div className="flex flex-col-reverse sm:flex-row items-start my-5 ">
           <div className="flex flex-col pr-8">
