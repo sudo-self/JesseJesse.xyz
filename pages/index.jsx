@@ -159,7 +159,7 @@ return (
     href="https://github.com/sudo-self/floater-buttons/actions/workflows/npm-publish.yml"
     target="_blank"
     rel="noopener noreferrer"
-    className="mr-4" // Tailwind margin-right class
+    className="mr-4" 
   >
     <img
       src="https://github.com/sudo-self/floater-buttons/actions/workflows/npm-publish.yml/badge.svg"
@@ -190,12 +190,12 @@ return (
         </div>
       </div>
       <div className="mt-[40px] mb-[20px]">
-        <h1 className="tracking-tighter  text-4xl mb-6 font-extrabold">Blogs</h1>
+        <h1 className="tracking-tighter  text-4xl mb-6 font-extrabold">dev.to</h1>
         <RecentlyBlog />
       </div>
       <div className="mt-[70px]">
-        <h1 className="tracking-tighter  text-4xl mb-6 font-extrabold">Some Projects</h1>
-        <PinnedRepos />
+        <h1 className="tracking-tighter  text-4xl mb-6 font-extrabold">Projects</h1>
+        <PinnedRepos /> 
       </div>
     </main>
   );
