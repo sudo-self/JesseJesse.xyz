@@ -168,7 +168,6 @@ return (
           <img
             src="https://github.com/sudo-self/floater-xyz/actions/workflows/nextjs.yml/badge.svg"
             alt="Deploy Next.js site to Pages"
-            className="w-32"
           />
         </a>
           </div>
