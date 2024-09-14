@@ -107,7 +107,7 @@ const Blog = () => {
   return (
     <Body title="Blog">
       <div>
-        <h1 className="font-extrabold text-6xl tracking-tight">Blog</h1>
+        <h1 className="font-extrabold text-6xl tracking-tight">dev.to</h1>
         <div class="relative w-full mt-6">
           <input
             onChange={(x) => InputonChange(x.target.value)}
