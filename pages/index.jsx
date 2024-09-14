@@ -154,7 +154,13 @@ return (
                 style={{ marginLeft: '5px' }}
               />
             </p>
-              <a
+             <a href="https://github.com/sudo-self/floater-buttons/actions/workflows/npm-publish.yml" target="_blank" rel="noopener noreferrer">
+        <img
+          src="https://github.com/sudo-self/floater-buttons/actions/workflows/npm-publish.yml/badge.svg"
+          alt="Node.js Package"
+        />
+      </a>     
+      <a
           href="https://github.com/sudo-self/floater-xyz/actions/workflows/nextjs.yml"
           target="_blank"
           rel="noopener noreferrer"
