@@ -134,17 +134,6 @@ export default function HomePage() {
                 >
                   (⌐■_■)🔘
                 </a>
-                 <a
-          href="https://github.com/sudo-self/floater-xyz/actions/workflows/nextjs.yml"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="https://github.com/sudo-self/floater-xyz/actions/workflows/nextjs.yml/badge.svg"
-            alt="Deploy Next.js site to Pages"
-            className="w-32"
-          />
-        </a>
       </h1>
             </div>
             <div className="flex items-center ml-6">
@@ -165,6 +154,17 @@ export default function HomePage() {
                 style={{ marginLeft: '5px' }}
               />
             </p>
+              <a
+          href="https://github.com/sudo-self/floater-xyz/actions/workflows/nextjs.yml"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://github.com/sudo-self/floater-xyz/actions/workflows/nextjs.yml/badge.svg"
+            alt="Deploy Next.js site to Pages"
+            className="w-32"
+          />
+        </a>
           </div>
           <div className="flex-1"></div>
           <div className="w-[130px] sm:w-[140px] relative sm:my-[25px] my-[-15px] sm:mx-0 mx-[-10px] ">
