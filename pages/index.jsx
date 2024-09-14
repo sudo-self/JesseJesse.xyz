@@ -156,16 +156,30 @@ export default function HomePage() {
             </p>
           </div>
           <div className="flex-1"></div>
-          <div className="w-[130px] sm:w-[140px] relative sm:my-[25px] my-[-15px] sm:mx-0 mx-[-10px] ">
-            <Image
-              placeholder="blur"
-              src={require("/public/JesseRoper.jpg")}
-              alt="Jesse Roper"
-              className="w-auto rounded-full grayscale"
-            />
-          </div>
-        </div>
-      </div>
+<div className="w-[130px] sm:w-[140px] relative sm:my-[25px] my-[-15px] sm:mx-0 mx-[-10px]">
+  <Image
+    placeholder="blur"
+    src={require("/public/JesseRoper.jpg")}
+    alt="Jesse Roper"
+    className="w-auto rounded-full grayscale"
+  />
+</div>
+
+{/* Badge placed under the image */}
+<div className="flex justify-center mt-4">
+  <a
+    href="https://github.com/sudo-self/floater-xyz/actions/workflows/nextjs.yml"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img
+      src="https://github.com/sudo-self/floater-xyz/actions/workflows/nextjs.yml/badge.svg"
+      alt="Deploy Next.js site to Pages"
+      className="w-32"  // adjust width as needed
+    />
+  </a>
+</div>
+
       <div className="mt-[40px] mb-[20px]">
         <h1 className="tracking-tighter  text-4xl mb-6 font-extrabold">Blogs</h1>
         <RecentlyBlog />
