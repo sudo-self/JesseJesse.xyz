@@ -10,6 +10,7 @@ import RecentlyBlog from "./RecentlyBlog";
 import Head from "next/head";
 import Confetti from "react-dom-confetti";
 
+
 const firebaseConfig = {
   apiKey: "AIzaSyAFRwmutdSXr2XlY_VROUkN0QRna8kbDvc",
   authDomain: "fresh-squeezed-lemons.firebaseapp.com",
@@ -25,7 +26,19 @@ if (!firebase.apps.length) {
   firebase.initializeApp(firebaseConfig);
 }
 
-const storage = firebase.storage();
+const confettiConfig = {
+  angle: 180,
+  spread: 360,
+  startVelocity: 500,
+  elementCount: 1200,
+  dragFriction: 0.3,
+  duration: 4000,
+  stagger: 0,
+  width: "20px",
+  height: "20px",
+  perspective: "1000px",
+  colors: ["#a864fd", "#29cdff", "#78ff44", "#ff718d", "#fdff6a"]
+};
 
 export default function HomePage() {
   const [viewCount, setViewCount] = useState(null);
@@ -46,12 +59,16 @@ export default function HomePage() {
         const snapshot = await firebase.database().ref("viewCount").once("value");
         const count = snapshot.val();
         setViewCount(count);
+
+      
+        await incrementViewCount();
+
+    
         const intervalId = setInterval(() => {
           setCurrentTime(getCurrentTime());
         }, 1000);
 
-      
-        await incrementViewCount();
+        return () => clearInterval(intervalId); 
       } catch (error) {
         console.error("Error fetching view count:", error);
       }
@@ -71,54 +88,37 @@ export default function HomePage() {
     }
   };
 
-  const triggerConfetti = () => {
+  const triggerConfetti = async () => {
+    await incrementViewCount(); 
     setConfettiActive(true);
     setTimeout(() => {
       setConfettiActive(false);
     }, 4000);
   };
+  
 
-  const confettiConfig = {
-    angle: 180,
-    spread: 360,
-    startVelocity: 500,
-    elementCount: 1200,
-    dragFriction: 0.3,
-    duration: 4000,
-    stagger: 0,
-    width: "20px",
-    height: "20px",
-    perspective: "1000px",
-    colors: ["#a864fd", "#29cdff", "#78ff44", "#ff718d", "#fdff6a"]
-  };
-
-  return (
+return (
     <main>
-<Head>
-  <meta charSet="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-  
-  <meta name="title" content="XYZ" />
-  <meta name="description" content="Explore Jesse Roper's personal site featuring blogs, projects, and creative works powered by Next.js." />
-  
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://JesseJesse.xyz" />
-  <meta property="og:title" content="XYZ" />
-  <meta property="og:description" content="Explore Jesse Roper's personal site featuring blogs, projects, and creative works powered by Next.js." />
-  <meta property="og:image" content="https://pub-62f7f17b63fe4f5cbbf739cf66c0c5ee.r2.dev/jessejesse.xyz.png" />
-
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://JesseJesse.xyz" />
-  <meta property="twitter:title" content="XYZ" />
-  <meta property="twitter:description" content="Explore Jesse Roper's personal site featuring blogs, projects, and creative works powered by Next.js." />
-  <meta property="twitter:image" content="https://pub-62f7f17b63fe4f5cbbf739cf66c0c5ee.r2.dev/jessejesse.xyz.png" />
-  
-  <meta name="author" content="Jesse Roper" />
-  
-  <title>JesseJesse.xyz</title>
-</Head>
-  <script src="https://firebasestorage.googleapis.com/v0/b/jessejessexyz.appspot.com/o/corner-button-1726292483965.js?alt=media&token=3449611d-2efd-4a85-8efd-32ae390f1db1"></script>
+      <Head>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="title" content="XYZ" />
+        <meta name="description" content="Explore Jesse Roper's personal site featuring blogs, projects, and creative works powered by Next.js." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://JesseJesse.xyz" />
+        <meta property="og:title" content="XYZ" />
+        <meta property="og:description" content="Explore Jesse Roper's personal site featuring blogs, projects, and creative works powered by Next.js." />
+        <meta property="og:image" content="https://pub-62f7f17b63fe4f5cbbf739cf66c0c5ee.r2.dev/jessejesse.xyz.png" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://JesseJesse.xyz" />
+        <meta property="twitter:title" content="XYZ" />
+        <meta property="twitter:description" content="Explore Jesse Roper's personal site featuring blogs, projects, and creative works powered by Next.js." />
+        <meta property="twitter:image" content="https://pub-62f7f17b63fe4f5cbbf739cf66c0c5ee.r2.dev/jessejesse.xyz.png" />
+        <meta name="author" content="Jesse Roper" />
+        <title>JesseJesse.xyz</title>
+      </Head>
+      <script src="https://firebasestorage.googleapis.com/v0/b/jessejessexyz.appspot.com/o/corner-button-1726292483965.js?alt=media&token=3449611d-2efd-4a85-8efd-32ae390f1db1"></script>
       <Confetti active={confettiActive} config={confettiConfig} />
       <div className="xs:ml-0 ml-2">
         <div className="flex flex-col-reverse sm:flex-row items-start my-5 ">
@@ -134,17 +134,17 @@ export default function HomePage() {
                 >
                   (⌐■_■)🔘
                 </a>
-      </h1>
+              </h1>
             </div>
             <div className="flex items-center ml-6">
               <button onClick={triggerConfetti} className="hover:text-green-500 flex items-center">
-                {viewCount !== null ? viewCount : "Loading..."} {/* Conditional rendering for view count */}
+                {viewCount !== null ? viewCount : "Loading..."}
                 <img
                   src="https://api.iconify.design/game-icons:protection-glasses.svg?color=%23ffffff"
                   alt="Icon"
                   style={{ marginLeft: '5px' }}
                 />
-              </button>
+              </button>  
             </div>
             <p className="text-blue-600 dark:text-blue-400 mb-3 ml-6 flex items-center">
               {currentTime}{" "}
@@ -188,3 +188,19 @@ export default function HomePage() {
     </main>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
