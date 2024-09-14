@@ -126,14 +126,6 @@ return (
             <div className="flex items-center">
               <h1 className="font-extrabold mt-6 text-3xl md:text-4xl tracking-tight notranslate">
                 Jesse Roper&nbsp;
-                <a
-                  href="https://floater.jessejesse.xyz"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-blue-500"
-                >
-                  (⌐■_■)🔘
-                </a>
               </h1>
             </div>
             <div className="flex items-center ml-6">
@@ -190,7 +182,16 @@ return (
         </div>
       </div>
       <div className="mt-[40px] mb-[20px]">
-        <h1 className="tracking-tighter  text-4xl mb-6 font-extrabold">dev.to</h1>
+      <a
+  href="https://floater.jessejesse.xyz"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="hover:text-blue-500"
+>
+  <h1 className="tracking-tighter text-4xl mb-6 font-extrabold">(⌐■_■)🔘</h1>
+</a>
+
+        
         <RecentlyBlog />
       </div>
       <div className="mt-[70px]">
