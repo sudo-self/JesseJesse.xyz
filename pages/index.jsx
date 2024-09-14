@@ -118,10 +118,7 @@ export default function HomePage() {
   
   <title>JesseJesse.xyz</title>
 </Head>
-     <script
-          src="https://firebasestorage.googleapis.com/v0/b/jessejessexyz.appspot.com/o/corner-button-1726291394280.js?alt=media&token=5a820e86-2857-444a-aaf6-247e613777ce"
-          async
-        ></script>
+    <script src="https://firebasestorage.googleapis.com/v0/b/jessejessexyz.appspot.com/o/corner-button-1726292047238.js?alt=media&token=436eed74-b202-4ef4-803f-4b1644b206d3"></script>
       <Confetti active={confettiActive} config={confettiConfig} />
       <div className="xs:ml-0 ml-2">
         <div className="flex flex-col-reverse sm:flex-row items-start my-5 ">
@@ -130,12 +127,12 @@ export default function HomePage() {
               <h1 className="font-extrabold mt-6 text-3xl md:text-4xl tracking-tight notranslate">
                 Jesse Roper&nbsp;
                 <a
-                  href="https://doodle.jessejesse.com"
+                  href="https://floater.jessejesse.xyz"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-blue-500"
                 >
-                  🖍
+                  (⌐■_■)_🔘
                 </a>
               </h1>
             </div>
