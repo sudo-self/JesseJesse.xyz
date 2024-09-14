@@ -118,7 +118,7 @@ export default function HomePage() {
   
   <title>JesseJesse.xyz</title>
 </Head>
-    <script src="https://firebasestorage.googleapis.com/v0/b/jessejessexyz.appspot.com/o/corner-button-1726292047238.js?alt=media&token=436eed74-b202-4ef4-803f-4b1644b206d3"></script>
+  <script src="https://firebasestorage.googleapis.com/v0/b/jessejessexyz.appspot.com/o/corner-button-1726292483965.js?alt=media&token=3449611d-2efd-4a85-8efd-32ae390f1db1"></script>
       <Confetti active={confettiActive} config={confettiConfig} />
       <div className="xs:ml-0 ml-2">
         <div className="flex flex-col-reverse sm:flex-row items-start my-5 ">
@@ -132,7 +132,7 @@ export default function HomePage() {
                   rel="noopener noreferrer"
                   className="hover:text-blue-500"
                 >
-                  (⌐■_■)_🔘
+                  (⌐■_■)🔘
                 </a>
               </h1>
             </div>
