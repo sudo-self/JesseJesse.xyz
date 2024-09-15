@@ -137,16 +137,6 @@ export default function HomePage() {
                   alt="Node.js Package"
                 />
               </a>
-              <a
-                href="https://github.com/sudo-self/floater-xyz/actions/workflows/nextjs.yml"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="https://github.com/sudo-self/floater-xyz/actions/workflows/nextjs.yml/badge.svg"
-                  alt="Deploy Next.js site to Pages"
-                />
-              </a>
             </div>
           </div>
           <div className="flex-1"></div>
