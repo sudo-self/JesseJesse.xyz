@@ -125,19 +125,6 @@ export default function HomePage() {
                 style={{ marginLeft: '5px' }}
               />
             </p>
-            <div className="flex">
-              <a
-                href="https://github.com/sudo-self/floater-buttons/actions/workflows/npm-publish.yml"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mr-4"
-              >
-                <img
-                  src="https://github.com/sudo-self/floater-buttons/actions/workflows/npm-publish.yml/badge.svg"
-                  alt="Node.js Package"
-                />
-              </a>
-            </div>
           </div>
           <div className="flex-1"></div>
           <div className="w-[130px] sm:w-[140px] relative sm:my-[25px] my-[-15px] sm:mx-0 mx-[-10px]">
